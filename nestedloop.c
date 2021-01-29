@@ -23,18 +23,15 @@ for(int i=1 ; i<=3; i++){
 // }
 
 
-
-//Repeat 2X
-for(int i=0; i < 2; i++){
-
+//Draw Right Arrow
+printf("\nRight Arrow");
     //Pyramid asc
     for(int i=1; i<6 ; i++){
         printf("\n");
-        for(int j=0 ; j<i; j++){ //0<1 , 1<1 /  0<2 , 1<2, 2<2 
+        for(int j=0 ; j < i; j++){ //0<1 , 1<1 /  0<2 , 1<2, 2<2 
             printf("*");
         }
     };
-
     //Pyramid desc
     for(int i=5; i > 0 ; i--){
         printf("\n");
@@ -43,7 +40,52 @@ for(int i=0; i < 2; i++){
         }
     };
 
-}
+printf("\n");
+
+    //Draw Paralleogram
+    printf("Paralleogram\n");
+    for(int i=6; i > 0 ; i--){
+        for(int j = 0 ; j < i ; j++){ // 0<1 , 1<1 /  0<2 , 1<2, 2<2 
+            printf(" ");
+        }
+        for(int j = 7 ; i < j ; j--){ // 5 < 6 , 5 < 5 / 6 < 4
+            printf("*");
+        }
+        printf("\n");
+    };
+    for(int i=6; i > 0 ; i--){
+        for(int j = 0 ; j < i ; j++){ // 0<1 , 1<1 /  0<2 , 1<2, 2<2 
+            printf("*");
+        }
+        for(int j = 7 ; i < j ; j--){ // 5 < 6 , 5 < 5 / 6 < 4
+            printf(" ");
+        }
+        printf("\n");
+    };
+
+    //Draw Left Arrow
+    printf("Left Arrow\n");  
+    for(int i=6; i > 0 ; i--){
+        for(int j = 0 ; j < i ; j++){ // 0<1 , 1<1 /  0<2 , 1<2, 2<2 
+            printf(" ");
+        }
+        for(int j = 7 ; i < j ; j--){ // 5 < 6 , 5 < 5 / 6 < 4
+            printf("*");
+        }
+        printf("\n");
+    };
+    for(int i=6; i > 0 ; i--){
+        for(int j = 7 ; i < j ; j--){ // 5 < 6 , 5 < 5 / 6 < 4
+            printf(" ");
+        }
+         for(int j = 0 ; j < i ; j++){ // 0<1 , 1<1 /  0<2 , 1<2, 2<2 
+            printf("*");
+        }
+        printf("\n");
+    };
 
 
+    
 }
+
+//https://www.youtube.com/watch?v=q6fPjQAzll8
