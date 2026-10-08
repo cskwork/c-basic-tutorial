@@ -4,19 +4,19 @@ int main()
 {
     char name[256];
     printf("이름이 뭐에요? ");
-    scanf("%s", name);
+    if (scanf("%255s", name) != 1) return 1;
 
     int age;
     printf("몇살이에요?");
-    scanf("%d", &age);
+    if (scanf("%d", &age) != 1) return 1;
 
     float weight;
     printf("몸무게는 몇 kg이에요? ");
-    scanf("%f", &weight);
+    if (scanf("%f", &weight) != 1) return 1;
 
     char what[256];
     printf("무슨 범죄를 저질렀어요? ");
-    scanf("%s", what);
+    if (scanf("%255s", what) != 1) return 1;
 
     //조서 내용 출력
     printf("\n\n ---- 범죄자 정보 ----\n\n");
